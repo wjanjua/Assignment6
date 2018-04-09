@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    
+    <title>Assignment 6</title>
+    <script src="js/Assignment6.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles/Assignment6.css" />
+    
+</head>
+
+<body>
+    
+<section id="title">
+    
+    <h1>Assignment 6</h1>
+    
+    <hr>
+        
+    <select onchange="MenuChoice()" id="menu"
+        <option></option>
+        <option>Please select an option</option>
+        <option>Add customer to database</option>
+        <option>Change a customer's shipping address</option>
+        <option>Delete a customer from database</option>
+    </select>
+
+    <hr>
+
+</section>
+    
+<section id="section1" class="section1">
+    <h2>Add Customer to database</h2>
+    
+    <hr>
+        
+    <br>
+        
+    <label>Please Enter a Customer ID:</label>
+    <input type="text" id="custid">
+    <label class="example">(the Customer ID should be 5 uppercase text characters)</label>
+    
+    <br>
+        
+    <label>Please enter the customer's name:</label>
+    <input type="text" id="custname">
+    
+    <br>
+        
+    <label>Please enter the customer's city:</label>
+    <input type="text" id="custcity">
+        
+    <br>
+    
+    <button onclick="CreateCustomer()"id="newcust">Add New Customer</button>
+    
+    <br>
+        
+    <hr>
+        
+    <br>
+    
+    <label id="result">Result:</label>
+    
+</section>
+
+<section id="section2" class="section2">
+    <h3>Changing customer's shipping address</h3>
+</section>
+
+<section id="section3" class="section3">
+    <h4>Delete customer from database</h4>
+</section>
+
+</body>
+</html>
