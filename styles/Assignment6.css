@@ -1,3 +1,7 @@
-section.section1 {background-color:#B22222;visibility: hidden;position:relative;position: absolute}
-section.section2 {background-color:#B22222;visibility: hidden;position:relative;position: absolute;}
-section.section3 {background-color:#B22222;visibility: hidden;position:relative;position: absolute;}
+section.section1 {visibility: hidden;position:relative;width:600px;position: absolute}
+section.section2 {visibility: hidden;position:relative;width:600px;position: absolute;}
+section.section3 {visibility: hidden;position:relative;width:600px;position: absolute;}
+.example{font-style:italic;color:red;}
+h2{font-size: medium}
+h3{font-size: medium}
+h4{font-size: medium}

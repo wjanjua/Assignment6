@@ -1,57 +1,52 @@
-<!DOCTYPE html>
+<!DOCTYPE htm
+l>
 
 <html>
 <head>
     
     <title>Assignment 6</title>
-    <script src="js/Assignment6.js"></script>
     <link rel="stylesheet" type="text/css" href="styles/Assignment6.css" />
+    <script src="js/Assignment6.js"></script>
     
 </head>
 
 <body>
     
-<section id="title">
-    
     <h1>Assignment 6</h1>
     
     <hr>
-        
-    <select onchange="MenuChoice()" id="menu"
+      
+      <select onchange="MenuChoice()" id="menu"
         <option></option>
         <option>Please select an option</option>
         <option>Add customer to database</option>
-        <option>Change a customer's shipping address</option>
-        <option>Delete a customer from database</option>
+        <option>Change customer's shipping address</option>
+        <option>Delete customer from database</option>
     </select>
-
-    <hr>
-
-</section>
-    
-<section id="section1" class="section1">
-    <h2>Add Customer to database</h2>
     
     <hr>
         
     <br>
-        
-    <label>Please Enter a Customer ID:</label>
-    <input type="text" id="custid">
-    <label class="example">(the Customer ID should be 5 uppercase text characters)</label>
+
+<section id="section1" class="section1">
+    <h2>Add customer to database</h2>
     
+    <label>Please enter a Customer ID:</label>
+    <input type="text" id="custid">
+    <label class="example">The Customer ID should be 5 uppercase text characters.</label>
+
     <br>
         
     <label>Please enter the customer's name:</label>
     <input type="text" id="custname">
     
     <br>
-        
+  
     <label>Please enter the customer's city:</label>
     <input type="text" id="custcity">
-        
+  
     <br>
-    
+  
     <button onclick="CreateCustomer()"id="newcust">Add New Customer</button>
     
     <br>
@@ -60,17 +55,73 @@
         
     <br>
     
-    <label id="result">Result:</label>
-    
+    <label>Result of operation:</label>
+    <label id="result"></label>
 </section>
 
+
 <section id="section2" class="section2">
-    <h3>Changing customer's shipping address</h3>
+    <h3>Change customer's shipping address</h3>
+    
+    <label>Please enter the order number:</label>
+    <input type="text" id="custordernumber">
+    
+    <br>
+        
+    <label>Please enter the customer's name:</label>
+    <input type="text" id="custname2">
+    
+    <br>
+        
+    <label>Please enter the customer's street address:</label>
+    <input type="text" id="custstreetaddress">
+        
+    <br>
+        
+    <label>Please enter the customer's city:</label>
+    <input type="text" id="custcity2">
+    
+    <br>
+        
+    <label>Please enter the customer's postal code:</label>
+    <input type="text" id="custpostalcode">
+    
+    <br>
+        
+    <button onclick="ChangeShippingAddress()"id="changeshipping">Change Shipping Address</button>
+    
+    <br>
+    
+    <hr>
+    
+    <br>
+        
+    <label>Result of operation:</label>
+    <label id="result2"></label>
+    
+    
 </section>
 
 <section id="section3" class="section3">
     <h4>Delete customer from database</h4>
+    
+    <label>Enter the Customer ID for the customer you want to remove:</label>
+    <input type="text" id="custid2">
+    
+    <br>
+     
+    <button onclick="DeleteCustomer()"id="deletecust">Remove Customer</button>
+    
+    <br>
+        
+    <hr>
+        
+    <br>
+        
+    <label>Result of operation:</label>
+    <label id="result3"></label>
+    
 </section>
-
+    
 </body>
 </html>
